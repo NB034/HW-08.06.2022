@@ -42,7 +42,8 @@ public:
 	// Проверяет, пустой ли массив;
 	inline bool empty() const { return this->arr == nullptr; }
 	// Возвращает ссылку на элемент по индексу;
-	inline int& operator[](int index) const { return this->arr[index]; }
+	inline int operator[](int index) const { return this->arr[index]; }
+	inline int& operator[](int index) { return this->arr[index]; }
 
 	friend ostream& operator<<(ostream& out, const Vector112& arr);
 	friend istream& operator>>(istream& in, Vector112& arr);
