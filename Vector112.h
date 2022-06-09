@@ -37,7 +37,6 @@ public:
 	void remove(int val);
 	// Î÷èùàåò ìàññèâ;
 	void clear();
-	
 	// Âîçâðàùàåò ðàçìåð ìàññèâà;
 	inline int size() const { return this->len; }
 	// Ïðîâåðÿåò, ïóñòîé ëè ìàññèâ;
